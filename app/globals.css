@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'dazzle-bold';
+    src: url('../font/dazzleBold.ttf') format('truetype'); /* Adjust path and format if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'dazzle-mid';
+    src: url('../font/dazzleMid.ttf') format('truetype'); /* Adjust path and format if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+.advance-section svg {width: 20px;}
+.icon-cir {
+
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 15px;
+}
+.icon-cir svg {
+  fill: #ffffff;
+}
+.flow-icons li svg {
+  width: 20px;
+}
+.tradeIcon {
+  fill: #ffffff;
+}
+.tradeIcon.down {
+  fill: red;
+}
+.tradeIcon.up {
+  fill: green;
+}
+@media only screen and (max-width: 600px) {
+  .bottom-logo-text {
+    font-size: 50px;
+    margin: 0;
+  }
+}
+.menubtn span {
+  transition: all ease-in-out .3s;
+}
+.menubtn[data-state="open"] span {
+transform: rotate(90deg);
+}
+header {
+position: fixed;
+  top: 0;
+  margin-top: 0;
+  
+  transition: transform 0.3s ease-in-out;
+}
+header.sticky {
+ position: fixed;
+ top: 0;
+  width: 100%;
+  left: 0;
+ 
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, .9),
+      rgba(0, 0, 0, .7)
+    );
+  
+}
+header.sticky.hide {
+  transform: translateY(-100%);
+}
+header.sticky.show {
+  transform: translateY(0);
+}
+
