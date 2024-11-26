@@ -1,6 +1,10 @@
 *{
   box-sizing: border-box
 }
+body {
+  background: rgb(19, 19, 19);
+  overflow-x: hidden
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -80,5 +84,53 @@ header.sticky.hide {
 }
 header.sticky.show {
   transform: translateY(0);
+}
+.register-phone-no .react-tel-input {
+  width: 100%;
+  margin-top: 10px;
+}
+.register-phone-no .react-tel-input input {
+  width: 100%;
+}
+.register-phone-no .flag-dropdown .country-list {
+  position: absolute;
+  width: 200px;
+  overflow-x: hidden;
+  border: 1px #000000 solid;
+  border-radius: 10px;
+}
+.register-phone-no .flag-dropdown .country-list::-webkit-scrollbar {
+  display: none;
+}
+.register-phone-no .search-emoji{
+  display: none;
+}
+.register-phone-no .react-tel-input .country-list .search {
+  padding: 0;
+}
+.register-phone-no .react-tel-input .country-list .search input {
+  padding: 10px;
+  border-bottom: 1px #000000 solid;
+  margin: 0;
+}
+.register-phone-no .react-tel-input  .form-control {
+  border-radius: 50px;
+  border: 1px #000000 solid;
+}
+.register-phone-no .react-tel-input .flag-dropdown , .register-phone-no .react-tel-input .flag-dropdown.open  {
+  border-radius: 50px;
+  border: 1px #000000 solid;
+  border-top-right-radius:0 ;
+  border-bottom-right-radius:0 ;
+
+}
+.register-phone-no .react-tel-input .flag-dropdown.open .selected-flag {
+  border-radius: 50px;
+}
+.register-phone-no  .react-tel-input .selected-flag:hover, .register-phone-no  .react-tel-input .selected-flag:focus {
+  background: none;
+}
+.register-phone-no .react-tel-input .form-control {
+  height: 40px;
 }
 

@@ -1,3 +1,4 @@
+"use client"
 import Heroslider from "@/app/components/Heroslider";
 import ElasticSearch from "./components/ElasticSearch";
 import SectionContainer from "./components/Section";
@@ -7,6 +8,7 @@ import hoteImg from "../app/assets/images/hotel-image.jpg";
 import cardImg from "../app/assets/images/card-img.jpg";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import {
   Carousel,
   CarouselContent,
@@ -43,7 +45,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Icon } from "lucide-react";
+import useDeviceDetect from "@/libs/useDeviceDetect";
+
 export default function Home() {
+  
+const device = useDeviceDetect();
   const heroTheme = {
     type: "single",
     className: "dazzle-hero-bg",
@@ -136,6 +142,7 @@ export default function Home() {
       bath: 2,
     },
   ];
+console.log(device)
   return (
     <>
       <Heroslider settings={heroTheme}>
@@ -153,7 +160,19 @@ export default function Home() {
               The best platform to buy, sell your properties using crypto
             </p>
           </div>
-          <ElasticSearch className="w-full" />
+         
+          {device.isDesktop && <ElasticSearch className="w-full" />}
+        </div>
+        <div className="w-full bg-black border-t border-b border-t-zinc-50 border-b-zinc-50 absolute bottom-0 bg-opacity-[80%]">
+        <marquee>
+          <div className="container flex flex-row align-middle justify-between m-auto py-3">
+           
+            <div className="text-white">List Your Property For 39,999AED</div>
+            <div className="text-white">List Your Property For 39,999AED</div>
+            <div className="text-white">List Your Property For 39,999AED</div>
+         
+          </div>
+          </marquee>
         </div>
       </Heroslider>
       <SectionContainer className="first-section bg-dazzle-dark py-10">
@@ -164,7 +183,7 @@ export default function Home() {
           >
             Explore Apartment Types
           </Heading>
-          <div className="flex py-10 md:py-20 gap-5 flex-nowrap overflow-auto px-2 md:px-0 justify-center ">
+          <div className="flex py-10 md:py-20 gap-5 flex-nowrap overflow-auto px-2 md:px-0 justify-start md:justify-center ">
             {cardData.map((ele, index) => {
               return (
                 <Card
@@ -663,7 +682,7 @@ export default function Home() {
             </Heading>
           </div>
           <div className="acc-con w-full text-white">
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full px-2">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="items-start text-left">What is Dazzle?</AccordionTrigger>
                 <AccordionContent>

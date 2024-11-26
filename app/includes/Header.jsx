@@ -18,7 +18,7 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-function Header() {
+function Header({headerFoorterReq}) {
   const [isSticky, setIsSticky] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPos, setLastScrollPos] = useState(0);
@@ -49,7 +49,7 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollPos]);
   return (
-    <header className={`top-0 w-full z-10 py-3 md:py-2 ${isSticky ? "sticky" : ''} ${isVisible ? "show" : "hide"}`}>
+    headerFoorterReq && <header className={`top-0 w-full z-10 py-3 md:py-2 ${isSticky ? "sticky" : ''} ${isVisible ? "show" : "hide"}`}>
       <div class="sm:container mx-auto flex flex-row items-center gap-0 md:gap-2 justify-between px-3 md:px-0">
         <div className='flex items-center'>
           <Link href="/" className='mr-3 md:mr-9'><h2 className='text-[25px] md:text-[50px] text-white font-bold font-dazzleBold'>Dazzle</h2></Link>
@@ -82,7 +82,7 @@ function Header() {
         <div className='flex items-center gap-2 md:gap-5'>
           <span><LanguageIcon className="!w-[40px] !h-[40px] bg-dazzle-gray p-[3px] rounded-[50px] cursor-pointer"/></span>
           <Link href="/" className='mr-0'><h2 className='text-[14px] text-black py-[8px] px-[15px] font-semibold bg-white rounded-3xl hidden md:block'>ADD PROPERTY</h2></Link>
-          <Link href="/" className='mr-0 text-[14px] text-white py-[8px] px-[0px] font-semibold rounded-3xl gap-2 flex flex-row items-center'><UserIcon className="w-[25px] h-[25px]"/> <p className='hidden sm:block'>Login/Register</p></Link>
+          <Link href="/login" className='mr-0 text-[14px] text-white py-[8px] px-[0px] font-semibold rounded-3xl gap-2 flex flex-row items-center'><UserIcon className="w-[25px] h-[25px]"/> <p className='hidden sm:block'>Login/Register</p></Link>
         </div>
       </div>
     </header>

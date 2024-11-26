@@ -3,9 +3,9 @@ import SectionContainer from '../components/Section'
 import Heading from '../components/Heading'
 import Link from 'next/link';
 import { AppleIcon, PlayIcon } from '../elements/icons';
-function Footer() {
+function Footer({headerFoorterReq}) {
   return (
-    <footer className='bg-white py-0 pt-0'>
+    headerFoorterReq && <footer className='bg-white py-0 pt-0'>
       <SectionContainer className="first-section bg-dazzle-white py-0 ">
         <div class="container mx-auto flex flex-col">
           <Heading

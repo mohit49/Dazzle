@@ -1,9 +1,13 @@
+"use client"
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { SettinIcon ,BitCoin , EthIcon , UsdIcon } from "@/app/elements/icons";
+
 function ElasticSearch() {
+  
   return (
+    
     <div className="search-container w-full container">
       <div className="w-64 bg-white rounded-lg  rounded-b-none shadow-md search top">
         <ul class=" flex justify-between">
