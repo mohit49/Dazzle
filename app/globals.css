@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box
+}
+body {
+  background: rgb(19, 19, 19);
+  overflow-x: hidden
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'dazzle-bold';
+    src: url('../font/dazzleBold.ttf') format('truetype'); /* Adjust path and format if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'dazzle-mid';
+    src: url('../font/dazzleMid.ttf') format('truetype'); /* Adjust path and format if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+.advance-section svg {width: 20px;}
+.icon-cir {
+
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 15px;
+}
+.icon-cir svg {
+  fill: #ffffff;
+}
+.flow-icons li svg {
+  width: 20px;
+}
+.tradeIcon {
+  fill: #ffffff;
+}
+.tradeIcon.down {
+  fill: red;
+}
+.tradeIcon.up {
+  fill: green;
+}
+@media only screen and (max-width: 600px) {
+  .bottom-logo-text {
+    font-size: 50px;
+    margin: 0;
+  }
+}
+.menubtn span {
+  transition: all ease-in-out .3s;
+}
+.menubtn[data-state="open"] span {
+transform: rotate(90deg);
+}
+header {
+position: fixed;
+  top: 0;
+  margin-top: 0;
+  
+  transition: transform 0.3s ease-in-out;
+}
+header.sticky {
+ position: fixed;
+ top: 0;
+  width: 100%;
+  left: 0;
+ 
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, .9),
+      rgba(0, 0, 0, .7)
+    );
+  
+}
+header.sticky.hide {
+  transform: translateY(-100%);
+}
+header.sticky.show {
+  transform: translateY(0);
+}
+.register-phone-no .react-tel-input {
+  width: 100%;
+  margin-top: 10px;
+}
+.register-phone-no .react-tel-input input {
+  width: 100%;
+}
+.register-phone-no .flag-dropdown .country-list {
+  position: absolute;
+  width: 200px;
+  overflow-x: hidden;
+  border: 1px #000000 solid;
+  border-radius: 10px;
+}
+.register-phone-no .flag-dropdown .country-list::-webkit-scrollbar {
+  display: none;
+}
+.register-phone-no .search-emoji{
+  display: none;
+}
+.register-phone-no .react-tel-input .country-list .search {
+  padding: 0;
+}
+.register-phone-no .react-tel-input .country-list .search input {
+  padding: 10px;
+  border-bottom: 1px #000000 solid;
+  margin: 0;
+}
+.register-phone-no .react-tel-input  .form-control {
+  border-radius: 50px;
+  border: 1px #000000 solid;
+}
+.register-phone-no .react-tel-input .flag-dropdown , .register-phone-no .react-tel-input .flag-dropdown.open  {
+  border-radius: 50px;
+  border: 1px #000000 solid;
+  border-top-right-radius:0 ;
+  border-bottom-right-radius:0 ;
+
+}
+.register-phone-no .react-tel-input .flag-dropdown.open .selected-flag {
+  border-radius: 50px;
+}
+.register-phone-no  .react-tel-input .selected-flag:hover, .register-phone-no  .react-tel-input .selected-flag:focus {
+  background: none;
+}
+.register-phone-no .react-tel-input .form-control {
+  height: 40px;
+}
+
