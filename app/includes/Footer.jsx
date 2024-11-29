@@ -12,7 +12,7 @@ function Footer({headerFoorterReq}) {
             level={2}
             className="text-dazzle-dark text-center mt-[-50px] text-[200px] font-dazzleBold font-bold leading-[100%] bottom-logo-text "
           >
-            Dazzle
+            Mazzl
           </Heading>
 
           <ul className="flex items-center m-auto mt-5 gap-3 flex-nowrap md:flex-wrap justify-center">
