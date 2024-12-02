@@ -1,7 +1,7 @@
 
 
 import localFont from "next/font/local";
-import "./globals.css";
+
 import Footer from "../app/includes/Footer";
 import Header from "./includes/Header";
 

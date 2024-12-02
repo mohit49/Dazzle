@@ -83,7 +83,7 @@ export default function Home() {
       <section className="py-4">
         <div class="sm:container mx-auto  gap-8 items-center">
           <div className=" w-[100%] overflow-hidden grid grid-home-screen">
-            <div className="big relative">
+            <div className="big relative w-[100%]">
               <div className="data-btn flex flex-row gap-2 absolute right-3 bottom-3">
                 <span className="bg-white py-2 px-3 rounded-lg font-bold cursor-pointer">
                   SEE ALL 20 PHOTOS
@@ -95,7 +95,7 @@ export default function Home() {
                   QA-CODE
                 </span>
               </div>
-              <Image
+              <Image 
                 src={buildings}
                 container={true}
                 layout="" // This will make the image fill the container,
@@ -125,8 +125,8 @@ export default function Home() {
         </div>
       </section>
       <section className="">
-        <div class="sm:container mx-auto  gap-10 items-start flex flex-row">
-          <div className="w-[60%] mb-[50px]">
+        <div class="sm:container mx-auto  gap-5 items-start flex flex-row">
+          <div className="w-[68%] mb-[50px]">
             <div className=" flex flex-row justify-start text-[#a5a5a5] gap-24 text-[18px] mb-6 py-3">
               <ul className="flex flex-row flex-wrap gap-y-[30px]">
                 <li className="flex justify-start items-center gap-3 props-icon w-1/3">
@@ -272,20 +272,20 @@ export default function Home() {
                 className="w-full rounded-lg"
               /></div>
           </div>
-          <div className="w-[40%] mb-[50px]">
+          <div className="w-[32%] mb-[50px]">
             <div className="flex bg-[white] rounded-md items-start flex-col p-5 gap-4 mt-6">
               <h3 className="text-[24px]">Schedule a tour</h3>
-              <Button className="bg-[#1a1a1a] text-[#ffffff] !p-7 w-[100%] rounded-[100px] ">
+              <Button className="bg-[#1a1a1a] text-[#ffffff] !p-7 w-[100%] rounded-[30px]">
                 SUBMIT A TOUR REQUEST
               </Button>
             </div>
             <div className="flex bg-[white] rounded-md items-start flex-col p-5 gap-4 mt-6">
               <h3 className="text-[24px] font-medium">Payment Options</h3>
               <div className="flex justify-between w-[100%] gap-3">
-                <Button className="border-[#1a1a1a] border border-solid text-[#1a1a1a] !p-7 w-[100%] rounded-[100px] ">
+                <Button className="border-[#1a1a1a] border border-solid text-[#1a1a1a] !p-5 w-[100%] rounded-[35px] ">
                   AED (Emirati Dirham)
                 </Button>
-                <Button className="bg-[#1a1a1a] text-[#ffffff] !p-7 w-[100%] rounded-[100px] ">
+                <Button className="bg-[#1a1a1a] text-[#ffffff] !p-5 w-[100%] rounded-[35px]">
                   USDT (Cryptocurrency)
                 </Button>
               </div>
@@ -316,7 +316,7 @@ export default function Home() {
                 <p className="font-medium text-[13px]">Payment Method:  <b>Bank Cheque</b></p>
                 <p className="font-medium text-[13px]">Payment Time Limit:  <b>5 Mint.</b></p>
               </div>
-              <Button className="bg-[#1a1a1a] text-[#ffffff] !p-7 w-[100%] rounded-[100px] ">
+              <Button className="bg-[#1a1a1a] text-[#ffffff] !p-7 w-[100%] rounded-[35px] ">
                 PROCEED TO PAY
               </Button>
             </div>
