@@ -161,3 +161,122 @@ header.sticky.show {
   grid-row-start: 3;
 }
 
+.tr-cross-scrtips {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  z-index: 12;
+  align-self: baseline;
+  background: #ffffff;
+
+  position: relative;
+  flex-direction: column;
+  background: #ffffff;
+}
+.tr-cross-scrtips--one {
+  width: 130%;
+ 
+  background: black;
+ 
+  position: relative;
+  z-index: 3;
+  margin-right: -15px;
+  margin-left: -15px;
+  transform-origin: right;
+  display: flex;
+  align-items: center;
+}
+.tr-cross-scrtips--two {
+  width: 130%;
+
+  background: #ffffff;
+ 
+  position: relative;
+  margin-right: -15px;
+  margin-left: -15px;
+  z-index: 2;
+  transform-origin: left;
+  display: flex;
+  align-items: center;
+}
+
+
+.tr-cross-scrtips ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+.tr-cross-scrtips ul li {
+  margin: 0px 10px;
+  font-weight: bold;
+  color:#ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 18px;
+  padding: 20px;
+}
+.tr-cross-scrtips ul li::before {
+  content: '';
+  height: 5px;
+  display: flex;
+  width: 5px;
+  margin-right: 10px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.tr-cross-scrtips .tr-cross-scrtips--two ul li::before {
+  background: white;
+}
+.tr-cross-scrtips .tr-cross-scrtips--two ul li {
+  margin: 0px 10px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+
+}
+.track:hover {
+  animation-play-state: paused;
+}
+
+.track {
+
+  white-space: nowrap;
+  will-change: transform;
+}
+.track-left {
+  animation: marquee-left 40s linear infinite;
+}
+.track-right {
+  animation: marquee-right 40s linear infinite;
+}
+.props-icon svg {
+  fill: #ffffff;
+  height: 30px;
+  
+}
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

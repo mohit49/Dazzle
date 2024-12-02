@@ -163,16 +163,32 @@ console.log(device)
          
           {device.isDesktop && <ElasticSearch className="w-full" />}
         </div>
-        <div className="w-full bg-black border-t border-b border-t-zinc-50 border-b-zinc-50 absolute bottom-0 bg-opacity-[80%]">
-        <marquee>
-          <div className="container flex flex-row align-middle justify-between m-auto py-3">
-           
-            <div className="text-white">List Your Property For 39,999AED</div>
-            <div className="text-white">List Your Property For 39,999AED</div>
-            <div className="text-white">List Your Property For 39,999AED</div>
-         
+        <div className="w-full bg-black border-t border-b overflow-hidden border-t-zinc-50 border-b-zinc-50 absolute bottom-0 bg-opacity-[80%]">
+        <div class="tr-cross-scrtips">
+        <div class="tr-cross-scrtips--one">
+          <div class="marquee">
+            <div class="track track-left">
+              <div class="content">
+                <ul class="marquee marque-left">
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                  <li>List Your Property For 39,999AED</li>
+                 
+                </ul>
+              </div>
+            </div>
           </div>
-          </marquee>
+        </div>
+        </div>
         </div>
       </Heroslider>
       <SectionContainer className="first-section bg-dazzle-dark py-10">
