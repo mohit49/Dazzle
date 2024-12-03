@@ -59,11 +59,10 @@ function Header({headerFoorterReq}) {
               <Button className="menubtn text-white !text-[16px] p-0 ">Buy <span className='menubtn-data-[state="open"]:rotate-[90deg]'><ArrowDown /></span></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 bg-white absolute left-[-20px] top-[10px]">
-              <DropdownMenuItem><Link href="/properties/one-river-point">Apartment</Link></DropdownMenuItem>
-              <DropdownMenuItem>Villa</DropdownMenuItem>
-              <DropdownMenuItem>Townhouse</DropdownMenuItem>
-              <DropdownMenuItem>Penthouse</DropdownMenuItem>
-              <DropdownMenuItem>Sky Villa</DropdownMenuItem>
+              <DropdownMenuItem><Link href="/properties/one-river-point" className='text-[16px]'>Off Plan</Link></DropdownMenuItem>
+              <hr/>
+              <DropdownMenuItem ><Link href="/properties/one-river-point" className='text-[16px]'>Ready</Link></DropdownMenuItem>
+             
             </DropdownMenuContent>
           </DropdownMenu>
           <DropdownMenu className="relative" modal={false}>
@@ -71,10 +70,9 @@ function Header({headerFoorterReq}) {
               <Button className="menubtn text-white !text-[16px] p-0 ">Sell <span className='menubtn-data-[state="open"]:rotate-[90deg]'><ArrowDown /></span></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 bg-white absolute left-[-20px] top-[10px]">
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
-              <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem><Link href="/properties/one-river-point" className='text-[16px]'>Off Plan</Link></DropdownMenuItem>
+              <hr/>
+              <DropdownMenuItem ><Link href="/properties/one-river-point" className='text-[16px]'>Ready</Link></DropdownMenuItem>
 
             </DropdownMenuContent>
           </DropdownMenu>

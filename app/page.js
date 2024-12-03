@@ -8,6 +8,10 @@ import hoteImg from "../app/assets/images/hotel-image.jpg";
 import cardImg from "../app/assets/images/card-img.jpg";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Navigation,Mousewheel,Keyboard, FreeMode, Pagination } from 'swiper/modules';
 
 import {
   Carousel,
@@ -237,7 +241,135 @@ console.log(device)
           </div>
         </div>
       </SectionContainer>
+      <SectionContainer className="first-section bg-dazzle-dark py-10">
+        <div class="sm:container mx-auto ">
+          <Heading
+            level={2}
+            className="text-white text-center font-dazzleBold font-bold text-[20px] md:text-[35px]"
+          >
+           In Spotlight
 
+
+          </Heading>
+          <Heading
+            level={5}
+            className="text-dazzle-gray text-center font-dazzleMid font-semibold  text-[12px] md:text-[16px]"
+          >
+          Find your best place to live with us.
+          </Heading>
+       
+        </div>
+        <div className="flex py-10 md:py-10 gap-5 flex-nowrap px-2 md:px-0 justify-start md:justify-center ">
+          <Swiper 
+        slidesPerView={'auto'}
+        centeredSlides={true}
+        spaceBetween={30}
+        freeMode={true}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination, Navigation]}
+        className="spot-lite-sl !overflow-visible"
+      >
+        <SwiperSlide className="!w-[auto]">
+          <div className="item-mn flex flex-col-reverse md:flex-row">
+            <div className="card-gg bg-[#ffffff] p-5 flex flex-col justify-between">
+              <div>
+              <h3 className="text-[30px] mb-3 font-bold">Elan Digi Homes</h3>
+              <p className="text-[16px] mb-3">Sector 80 new tower Dubai</p>
+              </div>
+              <div>
+              <p  className="text-[25px] mb-3 font-medium">$2.83Lakh - $4.31Lakh</p>
+              <p  className="text-[15px] mb-3 font-semibold">2, 3, 3.5 BHK Apartments</p>
+              </div>
+              <Button className="p-5 py-6 bg-[#000000] text-[#ffffff] mt-3 w-full !rounded-[50px]">Contact</Button>
+            </div>
+            <div className="card-img">   <Image
+                  src={hoteImg}
+                  alt="{settings.alt}"
+                  container={true}
+                  className="w-full"
+                  layout="" // This will make the image fill the container,
+                  objectFit="cover" // Ensures the image covers the full container area,
+                /></div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="!w-[auto]">
+          <div className="item-mn flex flex-col-reverse md:flex-row">
+            <div className="card-gg bg-[#ffffff] p-5 flex flex-col justify-between">
+              <div>
+              <h3 className="text-[30px] mb-3 font-bold">Elan Digi Homes</h3>
+              <p className="text-[16px] mb-3">Sector 80 new tower Dubai</p>
+              </div>
+              <div>
+              <p  className="text-[25px] mb-3 font-medium">$2.83Lakh - $4.31Lakh</p>
+              <p  className="text-[15px] mb-3 font-semibold">2, 3, 3.5 BHK Apartments</p>
+              </div>
+              <Button className="p-5 py-6 bg-[#000000] text-[#ffffff] mt-3 w-full !rounded-[50px]">Contact</Button>
+            </div>
+            <div className="card-img">   <Image
+                  src={hoteImg}
+                  alt="{settings.alt}"
+                  container={true}
+                  className="w-full"
+                  layout="" // This will make the image fill the container,
+                  objectFit="cover" // Ensures the image covers the full container area,
+                /></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="!w-[auto]">
+          <div className="item-mn flex flex-col-reverse md:flex-row">
+            <div className="card-gg bg-[#ffffff] p-5 flex flex-col justify-between">
+              <div>
+              <h3 className="text-[30px] mb-3 font-bold">Elan Digi Homes</h3>
+              <p className="text-[16px] mb-3">Sector 80 new tower Dubai</p>
+              </div>
+              <div>
+              <p  className="text-[25px] mb-3 font-medium">$2.83Lakh - $4.31Lakh</p>
+              <p  className="text-[15px] mb-3 font-semibold">2, 3, 3.5 BHK Apartments</p>
+              </div>
+              <Button className="p-5 py-6 bg-[#000000] text-[#ffffff] mt-3 w-full !rounded-[50px]">Contact</Button>
+            </div>
+            <div className="card-img">   <Image
+                  src={hoteImg}
+                  alt="{settings.alt}"
+                  container={true}
+                  className="w-full"
+                  layout="" // This will make the image fill the container,
+                  objectFit="cover" // Ensures the image covers the full container area,
+                /></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="!w-[auto]">
+          <div className="item-mn flex flex-col-reverse md:flex-row">
+            <div className="card-gg bg-[#ffffff] p-5 flex flex-col justify-between">
+              <div>
+              <h3 className="text-[30px] mb-3 font-bold">Elan Digi Homes</h3>
+              <p className="text-[16px] mb-3">Sector 80 new tower Dubai</p>
+              </div>
+              <div>
+              <p  className="text-[25px] mb-3 font-medium">$2.83Lakh - $4.31Lakh</p>
+              <p  className="text-[15px] mb-3 font-semibold">2, 3, 3.5 BHK Apartments</p>
+              </div>
+              <Button className="p-5 py-6 bg-[#000000] text-[#ffffff] mt-3 w-full !rounded-[50px]">Contact</Button>
+            </div>
+            <div className="card-img">   <Image
+                  src={hoteImg}
+                  alt="{settings.alt}"
+                  container={true}
+                  className="w-full"
+                  layout="" // This will make the image fill the container,
+                  objectFit="cover" // Ensures the image covers the full container area,
+                /></div>
+          </div>
+        </SwiperSlide>
+ 
+     
+      </Swiper>
+          </div>
+      </SectionContainer>
       <SectionContainer className="first-section bg-dazzle-dark py-10">
         <div class="md:container mx-auto">
           <Heading
