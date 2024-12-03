@@ -270,7 +270,7 @@ console.log(device)
           clickable: true,
         }}
         modules={[FreeMode, Pagination, Navigation]}
-        className="spot-lite-sl !overflow-visible"
+        className="spot-lite-sl !overflow-visible w-full"
       >
         <SwiperSlide className="!w-[auto]">
           <div className="item-mn flex flex-col-reverse md:flex-row">
