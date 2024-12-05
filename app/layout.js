@@ -8,7 +8,7 @@ import Header from "./includes/Header";
 import { ThemeProvider } from '../context/ThemeContext';
 import { AuthProvider } from '../context/AuthContext';
 import ClientSideRender from "@/libs/clientSideRender";
-
+import { Toaster } from "@/components/ui/toaster"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       >
     <ClientSideRender>
           {children}
+          <Toaster className="bg-white" />
           </ClientSideRender>
         
       </body>
